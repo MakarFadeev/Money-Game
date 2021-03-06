@@ -1,6 +1,6 @@
 from tkinter import *
 import random
-import time
+
 
 # Настройки окна
 window = Tk()
