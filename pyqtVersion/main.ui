@@ -38,6 +38,22 @@
       </widget>
      </item>
      <item>
+      <widget class="QPushButton" name="pushButton_11">
+       <property name="text">
+        <string>Профиль</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
       <widget class="QLabel" name="label_2">
        <property name="text">
         <string>Цена нефти 60 РублеКоинов за литр</string>
@@ -169,7 +185,32 @@ padding-right:0;
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="a"/>
+        <widget class="QComboBox" name="a">
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>нефть</string>
+         </property>
+         <property name="maxVisibleItems">
+          <number>0</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>нефть</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>хлопок</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>золото</string>
+          </property>
+         </item>
+        </widget>
        </item>
        <item>
         <widget class="QLabel" name="label_5">

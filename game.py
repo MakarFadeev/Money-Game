@@ -1,7 +1,6 @@
 from tkinter import *
 import random
 
-
 # Настройки окна
 window = Tk()
 window.geometry('700x700')
@@ -276,11 +275,13 @@ def iNeedRice():
 
 
 def acceptHappiness():
+    global happinessPerMonth, whatToBuyHappiness
     happinessPerMonth = float(scaleHappiness.get() / 160)
     whatToBuyHappiness = scaleHappiness.get()
 
 
 def acceptFit():
+    global happinessPerMonth, scaleFit, whatToBuyFit
     happinessPerMonth = float(scaleFit.get() / 160)
     whatToBuyFit = scaleFit.get()
 

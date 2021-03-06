@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'main.ui'
+# Form implementation generated from reading ui file 'pyqtVersion/main.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.3
 #
@@ -13,7 +13,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
-        MainWindow.setObjectName("Игра")
+        MainWindow.setObjectName("MainWindow")
         MainWindow.resize(850, 607)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -83,7 +83,12 @@ class Ui_MainWindow(object):
         self.b.setObjectName("b")
         self.horizontalLayout_3.addWidget(self.b)
         self.a = QtWidgets.QComboBox(self.verticalGroupBox_2)
+        self.a.setEditable(False)
+        self.a.setMaxVisibleItems(0)
         self.a.setObjectName("a")
+        self.a.addItem("")
+        self.a.addItem("")
+        self.a.addItem("")
         self.horizontalLayout_3.addWidget(self.a)
         self.label_5 = QtWidgets.QLabel(self.verticalGroupBox_2)
         self.label_5.setObjectName("label_5")
@@ -151,6 +156,10 @@ class Ui_MainWindow(object):
         self.pushButton.setText(_translate("MainWindow", "+100"))
         self.pushButton_2.setText(_translate("MainWindow", "+1000"))
         self.b.setText(_translate("MainWindow", "тип:"))
+        self.a.setCurrentText(_translate("MainWindow", "нефть"))
+        self.a.setItemText(0, _translate("MainWindow", "нефть"))
+        self.a.setItemText(1, _translate("MainWindow", "хлопок"))
+        self.a.setItemText(2, _translate("MainWindow", "золото"))
         self.label_5.setText(_translate("MainWindow", "количество:"))
         self.pushButton_5.setText(_translate("MainWindow", "-10"))
         self.pushButton_4.setText(_translate("MainWindow", "-100"))
