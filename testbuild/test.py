@@ -8,5 +8,6 @@ ui = Ui_MainWindow()
 ui.setupUi(window)
 
 ui.pushButton.clicked.connect(lambda:ui.label.setText('text2'))
+
 window.show()
 sys.exit(app.exec_())

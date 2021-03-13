@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>850</width>
+    <width>984</width>
     <height>607</height>
    </rect>
   </property>
@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QGroupBox" name="verticalGroupBox">
+   <widget class="QGroupBox" name="mainLobby">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -28,7 +28,7 @@
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="coins">
        <property name="text">
         <string>У вас есть 10000 РублеКоинов</string>
        </property>
@@ -38,7 +38,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_11">
+      <widget class="QPushButton" name="profile">
        <property name="text">
         <string>Профиль</string>
        </property>
@@ -54,7 +54,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_2">
+      <widget class="QLabel" name="priceOil">
        <property name="text">
         <string>Цена нефти 60 РублеКоинов за литр</string>
        </property>
@@ -64,7 +64,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_3">
+      <widget class="QLabel" name="priceCotton">
        <property name="text">
         <string>Цена хлопка 200 РублеКоинов за килограмм</string>
        </property>
@@ -74,7 +74,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_4">
+      <widget class="QLabel" name="priceGold">
        <property name="text">
         <string>Цена золота 30000 РублеКоинов за слиток</string>
        </property>
@@ -84,7 +84,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_6">
+      <widget class="QLabel" name="oil">
        <property name="text">
         <string>У вас есть 0 литров нефти</string>
        </property>
@@ -94,7 +94,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_7">
+      <widget class="QLabel" name="cotton">
        <property name="text">
         <string>У вас есть 0 килограмм хлопка</string>
        </property>
@@ -104,9 +104,19 @@
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_8">
+      <widget class="QLabel" name="gold">
        <property name="text">
         <string>У вас есть 0 слитков золота</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="deathTime">
+       <property name="text">
+        <string>До конца игры осталось 360 месяцев</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -134,12 +144,12 @@ padding-right:0;
      </item>
     </layout>
    </widget>
-   <widget class="QGroupBox" name="verticalGroupBox_2">
+   <widget class="QGroupBox" name="Buy">
     <property name="geometry">
      <rect>
       <x>540</x>
       <y>0</y>
-      <width>311</width>
+      <width>441</width>
       <height>171</height>
      </rect>
     </property>
@@ -151,23 +161,26 @@ padding-right:0;
       <number>0</number>
      </property>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <layout class="QHBoxLayout" name="_10__100__1000_">
        <item>
-        <widget class="QPushButton" name="pushButton_3">
+        <widget class="QPushButton" name="_10_">
          <property name="text">
           <string>+10</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="_100_">
          <property name="text">
           <string>+100</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="_1000_">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
          <property name="text">
           <string>+1000</string>
          </property>
@@ -176,16 +189,16 @@ padding-right:0;
       </layout>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <layout class="QHBoxLayout" name="countType">
        <item>
-        <widget class="QLabel" name="b">
+        <widget class="QLabel" name="typeLabel">
          <property name="text">
           <string>тип:</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="a">
+        <widget class="QComboBox" name="type">
          <property name="editable">
           <bool>false</bool>
          </property>
@@ -213,35 +226,35 @@ padding-right:0;
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_5">
+        <widget class="QLabel" name="countLabel">
          <property name="text">
           <string>количество:</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QSpinBox" name="c"/>
+        <widget class="QSpinBox" name="count"/>
        </item>
       </layout>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <layout class="QHBoxLayout" name="_10_100_1000">
        <item>
-        <widget class="QPushButton" name="pushButton_5">
+        <widget class="QPushButton" name="_10">
          <property name="text">
           <string>-10</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_4">
+        <widget class="QPushButton" name="_100">
          <property name="text">
           <string>-100</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_6">
+        <widget class="QPushButton" name="_1000">
          <property name="text">
           <string>-1000</string>
          </property>
@@ -250,20 +263,31 @@ padding-right:0;
       </layout>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_7">
-       <property name="text">
-        <string>Купить</string>
-       </property>
-      </widget>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="buy">
+         <property name="text">
+          <string>Купить</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="sell">
+         <property name="text">
+          <string>Продать</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </item>
     </layout>
    </widget>
-   <widget class="QGroupBox" name="verticalGroupBox">
+   <widget class="QGroupBox" name="Other">
     <property name="geometry">
      <rect>
       <x>540</x>
       <y>170</y>
-      <width>311</width>
+      <width>441</width>
       <height>391</height>
      </rect>
     </property>
@@ -278,21 +302,21 @@ padding-right:0;
       <number>50</number>
      </property>
      <item>
-      <widget class="QPushButton" name="pushButton_8">
+      <widget class="QPushButton" name="helpTeam">
        <property name="text">
         <string>Поддержать Команду</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_9">
+      <widget class="QPushButton" name="discord">
        <property name="text">
         <string>Дискорд сервер игры</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_10">
+      <widget class="QPushButton" name="site">
        <property name="text">
         <string>Сайт игры</string>
        </property>
@@ -306,7 +330,7 @@ padding-right:0;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>850</width>
+     <width>984</width>
      <height>22</height>
     </rect>
    </property>
